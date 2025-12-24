@@ -11329,3 +11329,15 @@ header.masthead .site-heading .h1 {
       vertical-align: middle;
       margin-bottom: 0;
   }
+  
+    /* 默认（小屏幕）：允许换行 */
+  .responsive-nowrap {
+    white-space: normal;
+  }
+
+  /* 中大屏幕及以上：禁止换行 */
+  @media (min-width: 768px) { /* 或用 992px 根据你的需求 */
+    .responsive-nowrap {
+      white-space: nowrap;
+    }
+  }
